@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/screens/cart_screen.dart';
+import 'package:shop_app/widgets/app_drawer.dart';
 import 'package:shop_app/widgets/badge.dart';
 import '../providers/cart.dart';
 import '../providers/products.dart';
@@ -56,12 +57,13 @@ class _ProductOverViewScreenState extends State<ProductOverViewScreen> {
                   Icons.shopping_cart,
                 ), 
                 onPressed: () {
-                  Navigator.of(context).pushNamed(CartScreen.routName);
+                  Navigator.of(context).pushNamed(CartScreen.routeName);
                 },
               ),
           ),
         ],
       ),
+      drawer: AppDrawer(),
       body: ProductsGrid(_showFavoriteOnly),
     );
   }
