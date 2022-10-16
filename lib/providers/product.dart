@@ -1,4 +1,8 @@
 import 'package:flutter/foundation.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:shop_app/models/http_exeption.dart';
+
 class Product with ChangeNotifier {
   final String? id;
   final String? title;
@@ -16,8 +20,30 @@ class Product with ChangeNotifier {
     this.isFavorite = false,
   });
 
-  void toggleFavoriteStatus() {
+  void _setFavValue(bool newValue) {
+    isFavorite = newValue;
+    notifyListeners();
+  }
+
+  Future<void> toggleFavoriteStatus() async {
+    final oldStatus = isFavorite;
     isFavorite = !isFavorite!;
     notifyListeners();
+    final url = Uri.parse(
+        'https://flutter-update-ductuan-default-rtdb.asia-southeast1.firebasedatabase.app/products/$id.json');
+
+    try {
+      final response = await http.patch(
+        url,
+        body: json.encode({
+          'isFavorite': isFavorite,
+        }),
+      );
+      if (response.statusCode >= 400) {
+        _setFavValue(oldStatus!);
+      }
+    } catch (error) {
+      _setFavValue(oldStatus!);
+    }
   }
 }
