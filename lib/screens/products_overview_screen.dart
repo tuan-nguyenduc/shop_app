@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:mysql_client/mysql_client.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/screens/cart_screen.dart';
 import 'package:shop_app/widgets/app_drawer.dart';
 import 'package:shop_app/widgets/badge.dart';
+import '../mysql.dart';
 import '../providers/cart.dart';
 import '../providers/products.dart';
 import '../widgets/product_item.dart';
@@ -21,9 +23,12 @@ class ProductOverViewScreen extends StatefulWidget {
 
 class _ProductOverViewScreenState extends State<ProductOverViewScreen> {
   var _showFavoriteOnly = false;
+
+  var db = Mysql();
+
+
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       appBar: AppBar(
         title: Text('MyShop'),
@@ -53,13 +58,13 @@ class _ProductOverViewScreenState extends State<ProductOverViewScreen> {
               value: cart.itemCount.toString(),
             ),
             child: IconButton(
-                icon: Icon(
-                  Icons.shopping_cart,
-                ), 
-                onPressed: () {
-                  Navigator.of(context).pushNamed(CartScreen.routeName);
-                },
+              icon: Icon(
+                Icons.shopping_cart,
               ),
+              onPressed: () {
+                Navigator.of(context).pushNamed(CartScreen.routeName);
+              },
+            ),
           ),
         ],
       ),
