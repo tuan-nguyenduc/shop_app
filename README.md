@@ -1,10 +1,10 @@
-# Sneaker App
+# Sneaker Shop App
 
 A Flutter project.
 
-## Getting Started
+## Member
 
-This project is a starting point for a Flutter application.
+* Nguyen Duc Tuan - 19021382
 
 A few resources to get you started if this is your first Flutter project:
 
