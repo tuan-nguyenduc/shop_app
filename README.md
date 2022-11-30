@@ -19,6 +19,6 @@ A Flutter & MySQL project.
 ![Screenshot_1669794594](https://user-images.githubusercontent.com/64391055/204738062-8720f266-c9ee-4ac2-9465-dff6c1520f2a.png)
 ![Screenshot_1669794603](https://user-images.githubusercontent.com/64391055/204738068-eee5b0f6-2fe5-4f1f-ac93-ae77873b9d92.png) -->
 
-<img src="https://cloud.githubusercontent.com/assets/4307137/10105283/251b6868-63ae-11e5-9918-b789d9d682ec.png" width="25%"></img> 
-<img src="https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png" width="25%"></img> 
-<img src="https://cloud.githubusercontent.com/assets/4307137/10105284/26aa7ad4-63ae-11e5-88b7-bc523a095c9f.png" width="25%"></img> 
+<img src="https://user-images.githubusercontent.com/64391055/204737986-720718f9-f38f-49da-bf7f-da689ddbad26.png" width="25%"></img> 
+<img src="https://user-images.githubusercontent.com/64391055/204737998-c9e2ed6f-ce5c-4d29-828d-29253206ded4.png" width="25%"></img> 
+<img src="https://user-images.githubusercontent.com/64391055/204738024-159717b4-5e38-4b7d-a9a6-0d55eaf2f9e0.png" width="25%"></img> 
