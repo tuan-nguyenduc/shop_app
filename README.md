@@ -2,6 +2,10 @@
 
 A Flutter & MySQL project.
 
+#Demo
+
+You can find my demo of this shoe shopping application here: https://drive.google.com/file/d/1LTQopyDirF0TmAiXL88fkIV3ilcXlA1x/view?usp=sharing
+
 ## Member
 
 * Nguyen Duc Tuan - 19021382
