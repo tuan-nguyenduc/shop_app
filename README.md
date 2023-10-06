@@ -2,7 +2,7 @@
 
 A Flutter & MySQL project.
 
-# Demo
+## Demo
 
 You can find my demo of this sneaker shop application here: https://drive.google.com/file/d/1LTQopyDirF0TmAiXL88fkIV3ilcXlA1x/view?usp=sharing
 
